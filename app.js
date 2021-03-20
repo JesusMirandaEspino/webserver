@@ -11,7 +11,10 @@ app.use( express.static( 'public' ) );
 
 
 app.get('/',  (req, res) => {
-    res.render( 'home' );
+    res.render( 'home', {
+        nombre: 'Jesus Miranda',
+        titulo: 'Practica curso de Nodejs'
+    } );
 });
 
 app.get('/generic',  (req, res) => {
